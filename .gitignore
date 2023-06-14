@@ -161,3 +161,5 @@ pytest_cache
 pytest.ini
 
 test
+
+core/settings/development_settings.py
