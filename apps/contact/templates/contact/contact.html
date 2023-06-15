@@ -6,10 +6,11 @@
     {{ contact.first_name }} {{ contact.last_name }}
   </h1>
 
+  {% if contact.picture %}
   <p>
     <img src="{{ contact.picture.url }}" alt="{{ contact.first_name }} {{ contact.last_name }}">
   </p>
-
+  {% endif %}
   <p><b>ID:</b> {{ contact.id }}</p>
   <p><b>E-mail:</b> {{ contact.email }}</p>
   <p><b>Phone:</b> {{ contact.phone }}</p>
